@@ -57,6 +57,6 @@ Route::get('/about', function () {
     return '<a href=":https://www.educastudio.com/about-us">About Us</a>';
 });
 
-Route::resource('contact', ContactController::class)->only([
+Route::resource('/contact', ContactController::class)->only([
     'index'
 ]);
